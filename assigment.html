@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Tracker</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Vertical Nav Bar */
+    nav {
+      background-color: #111;
+      width: 200px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      position: fixed;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    .container {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Learning Grid - content boxes */
+    .learning-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .day {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #444;
+    }
+
+    .day:hover {
+      background-color: #333;
+    }
+
+    .day h2 {
+      margin-bottom: 15px;
+    }
+
+    /* Self Profiling Section */
+    .self-profiling {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .self-profiling h2 {
+      margin-bottom: 20px;
+    }
+
+    .self-profiling img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #555;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 800px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+      }
+
+      .container {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .learning-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skill.html">Skills</a>
+    <!-- <a href="assigment.html">Assignment</a> -->
+    <a href="self-introduction.html">Self Introduction</a>
+  </nav>
+
+  <div class="container">
+    <h1>Learning Tracker of PESE 400</h1>
+
+    <div class="learning-grid">
+      <div class="day">
+        <h2>Day 1</h2>
+        <p>I gained valuable knowledge about handling interviews effectively and answering questions confidently.</p>
+      </div>
+      <div class="day">
+        <h2>Day 2</h2>
+        <p>I began my self-discovery journey, identifying my strengths and weaknesses to aid personal growth.</p>
+      </div>
+      <div class="day">
+        <h2>Day 3</h2>
+        <p>I learned to present myself confidently. Proper posture, eye contact, and clear speech enhance communication.</p>
+      </div>
+      <div class="day">
+        <h2>Day 4</h2>
+        <p>I delivered a speech on minimalism during our practical session, confidently speaking in front of everyone.</p>
+      </div>
+      <div class="day">
+        <h2>Day 5</h2>
+        <p>I learned how to structure and deliver a well-organized, clear, and confident presentation.</p>
+      </div>
+      <div class="day">
+        <h2>Day 6</h2>
+        <p>I observed other groups' presentations and noted both their strengths and areas for improvement.</p>
+      </div>
+      <div class="day">
+        <h2>Day 7</h2>
+        <p>Along with my group, I presented on inflation, covering inflation and interest rates as my topic.</p>
+      </div>
+      <div class="day">
+        <h2>Day 8</h2>
+        <p>I learned how to present myself well, maintain posture, and confidently address an audience effectively.</p>
+      </div>
+      <div class="day">
+        <h2>Day 9</h2>
+        <p>I gained knowledge about the 7 Cs of Communication, improving clarity and effectiveness in messages.</p>
+      </div>
+      <div class="day">
+        <h2>Day 10</h2>
+        <p>I learned how to properly structure and write a professional cover letter for job and internship applications.</p>
+      </div>
+      <div class="day">
+        <h2>Day 11</h2>
+        <p>I practiced writing formal, professional emails, including proper greetings, subject lines, and sign-offs.</p>
+      </div>
+      <div class="day">
+        <h2>Day 12</h2>
+        <p>I gave a one-minute speech about the Gallantry Awards of India and their importance in honoring bravery.</p>
+      </div>
+      <div class="day">
+        <h2>Day 13</h2>
+        <p>I watched other students deliver speeches and learned valuable public speaking skills from their techniques.</p>
+      </div>
+    </div>
+
+    <div class="self-profiling">
+      <h2>Self Profiling Sheet</h2>
+      <img src="images/sheet2.jpg" alt="Self Profiling Sheet 2">
+      <img src="images/sheet1.jpg" alt="Self Profiling Sheet 1">
+    </div>
+
+  </div>
+
+</body>
+</html>

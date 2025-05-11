@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Skills & Projects</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Vertical Nav Bar */
+    header {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 140px;
+      background-color:#0f0e0e8a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+
+    header nav {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Hover effect for all except 'Skills' */
+    header nav a:not(.active):hover {
+      background-color: #FF7F50;
+      color: black;
+    }
+
+    /* Active link: no hover for 'Skills' (keeps normal look) */
+    header nav a.active {
+      background-color: transparent;
+      color: white;
+      cursor: default;
+    }
+
+    /* Main Content Container */
+    .container {
+      padding: 50px;
+      margin-left: 160px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #FF7F50;
+    }
+
+    /* Skills Section */
+    .skills {
+      margin-bottom: 40px;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      font-size: 18px;
+      margin: 5px 0;
+    }
+
+    /* Projects Section */
+    .projects {
+      margin-top: 40px;
+    }
+
+    .project {
+      background-color: #222;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vertical Nav -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="assigment.html">Assignment</a>
+      <a href="self introduction.html">Self Introduction</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>My Skills & Projects</h1>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <p>I am proficient in:</p>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Java, C++, C, Python</li>
+      </ul>
+      <p>Core concept:</p>
+      <ul>
+        <li>Data Structures and Algorithms, OOPs</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Face Recognition Attendance System</h3>
+        <p>I have made a project on face recognition attendance using Python and ML algorithms like LBPH and Haar Cascade Classifier. The project efficiently records attendance with high accuracy.</p>
+        <img src="images/python.jpg" alt="Face Recognition Project">
+      </div>
+
+      <div class="project">
+        <h3>Cloud Computing Course Completion</h3>
+        <p>I have successfully completed a Cloud Computing course through SWAYAM and NPTEL. This course helped me understand cloud technologies and gain hands-on experience with cloud platforms.</p>
+        <img src="images/cloud.png" alt="Cloud Computing Certificate">
+      </div>
+
+      <div class="project">
+        <h3>Cloud IoT Edge ML Course Completion</h3>
+        <p>I have successfully completed a Cloud IoT Edge ML course through SWAYAM and NPTEL. This course helped me understand cloud and IoT technologies and gain hands-on experience with cloud platforms and IoT machines.</p>
+        <img src="images/iot cloud.jpg" alt="IoT Cloud Course Certificate">
+      </div>
+
+    </section>
+  </div>
+
+</body>
+</html>
