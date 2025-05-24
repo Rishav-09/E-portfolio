@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Reviews</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      background-color: #111;
+      width: 200px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      position: fixed;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px 20px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #333;
+    }
+
+    .container {
+      margin-left: 200px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .section-heading {
+      font-size: 26px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    .learning-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .day {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #444;
+    }
+
+    .day:hover {
+      background-color: #333;
+    }
+
+    .day h2 {
+      margin-bottom: 15px;
+    }
+
+    .day p {
+      text-align: justify;
+    }
+
+    .image-box {
+      background-color: #222;
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      border-radius: 8px;
+      border: 1px solid #555;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+      }
+
+      .container {
+        margin-left: 0;
+        padding: 20px;
+      }
+
+      .learning-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <div class="container">
+    <h1>Movie Reviews and Writing Skills</h1>
+
+    <div class="section-heading">Movie Reviews</div>
+    <p style="text-align: justify;">
+      Movies are more than just entertainment; they reflect society, emotions, and human experiences in powerful ways. A good film can inspire, teach valuable life lessons, and spark meaningful conversations. Through these movie reviews, we explore stories of hope, resilience, courage, and the complexities of the human spirit, offering thoughtful insights into some unforgettable cinematic masterpieces.
+    </p>
+
+    <div class="learning-grid">
+
+      <div class="day">
+        <h2>The Shawshank Redemption</h2>
+        <p>
+          The Shawshank Redemption is a deeply moving story about hope, resilience, and friendship in the darkest of places. The film follows Andy Dufresne, a man wrongfully imprisoned, and his journey of survival inside a harsh prison. It highlights the importance of inner strength, positive thinking, and the human spirit’s ability to endure against all odds. The bond between Andy and fellow inmate Red adds warmth and depth to the narrative. With powerful performances and an unforgettable ending, the movie teaches us to hold on to hope even when the world seems cruel and unforgiving. The film’s message about never giving up, no matter how difficult life becomes, continues to resonate with audiences worldwide.
+        </p>
+      </div>
+
+      <div class="day">
+        <h2>Dead Poets Society</h2>
+        <p>
+          Dead Poets Society is a beautiful film about courage, passion, and breaking free from societal expectations. Robin Williams delivers a mesmerizing performance as John Keating, an unorthodox English teacher at a strict boys' academy. He inspires his students to embrace poetry, think for themselves, and “seize the day.” The movie explores themes of conformity, self-expression, and the consequences of standing up for one's beliefs. Through its touching story and memorable characters, it encourages viewers to follow their dreams and live life with authenticity. The film also serves as a poignant reminder of how influential a teacher can be in shaping young minds and challenging rigid traditions.
+        </p>
+      </div>
+
+      <div class="day">
+        <h2>A Beautiful Mind</h2>
+        <p>
+          A Beautiful Mind is an emotionally powerful biographical drama about the life of mathematician John Nash, brilliantly portrayed by Russell Crowe. The movie showcases Nash’s exceptional academic achievements and his battle with paranoid schizophrenia. It thoughtfully depicts how mental illness affects not only the person suffering but also their loved ones. Despite facing delusions and internal struggles, Nash’s perseverance and love from his wife help him continue his academic pursuits. The film is a remarkable reminder of resilience, love, and determination. It inspires viewers to appreciate inner strength, the power of support, and never giving up on dreams. The movie also highlights the importance of empathy and understanding toward those facing invisible battles.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="section-heading">Email Writing</div>
+    <p style="text-align: justify;">
+      Email writing is an essential skill for personal and professional communication. It involves composing clear, concise, and polite messages, typically for work, academic, or formal purposes.
+    </p>
+
+    <div class="section-heading">Cover Letter Writing</div>
+    <p style="text-align: justify;">
+      A cover letter is a formal letter submitted with a job application explaining your interest in the position and why you are a good fit. It introduces you to the employer and highlights your relevant skills and experiences.
+    </p>
+
+    <div class="section-heading">Email Writing Samples</div>
+
+    <div class="image-box">
+      <img src="images/email.jpg" alt="Email Writing Sample 1">
+      <img src="images/email2.jpg" alt="Email Writing Sample 2">
+    </div>
+
+  </div>
+
+</body>
+</html>
