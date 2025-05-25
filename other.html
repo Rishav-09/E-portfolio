@@ -105,6 +105,23 @@
       border: 1px solid #555;
     }
 
+    .video-box {
+      background-color: #222;
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .video-box video {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+    }
+
     @media (max-width: 800px) {
       body {
         flex-direction: column;
@@ -132,6 +149,10 @@
         flex-direction: column;
         align-items: center;
       }
+
+      .video-box video {
+        height: auto;
+      }
     }
   </style>
 </head>
@@ -150,7 +171,6 @@
     </p>
 
     <div class="learning-grid">
-
       <div class="day">
         <h2>The Shawshank Redemption</h2>
         <p>
@@ -171,7 +191,6 @@
           A Beautiful Mind is an emotionally powerful biographical drama about the life of mathematician John Nash, brilliantly portrayed by Russell Crowe. The movie showcases Nash’s exceptional academic achievements and his battle with paranoid schizophrenia. It thoughtfully depicts how mental illness affects not only the person suffering but also their loved ones. Despite facing delusions and internal struggles, Nash’s perseverance and love from his wife help him continue his academic pursuits. The film is a remarkable reminder of resilience, love, and determination. It inspires viewers to appreciate inner strength, the power of support, and never giving up on dreams. The movie also highlights the importance of empathy and understanding toward those facing invisible battles.
         </p>
       </div>
-
     </div>
 
     <div class="section-heading">Email Writing</div>
@@ -185,10 +204,21 @@
     </p>
 
     <div class="section-heading">Email Writing Samples</div>
-
     <div class="image-box">
       <img src="images/email.jpg" alt="Email Writing Sample 1">
       <img src="images/email2.jpg" alt="Email Writing Sample 2">
+    </div>
+
+    <div class="section-heading">1-Minute Speaking</div>
+    <p style="text-align: justify;">
+      Public speaking helps build confidence, improve communication skills, and express ideas effectively. Here's a sample 1-minute speaking video for practice and inspiration.
+    </p>
+
+    <div class="video-box">
+      <video controls>
+        <source src="images/1min.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
   </div>
